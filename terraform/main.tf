@@ -3,10 +3,10 @@ module "sandbox" {
 
   control_tower_parameters = {
     AccountEmail              = "alchdliodd.newaft@gmail.com"
-    AccountName               = "sandbox-aft"
+    AccountName               = "cpt-aft"
     ManagedOrganizationalUnit = "AFT"
     SSOUserEmail              = "alchdliodd.newaft@gmail.com"
-    SSOUserFirstName          = "Sandbox"
+    SSOUserFirstName          = "cpt"
     SSOUserLastName           = "AFT"
   }
 
@@ -23,5 +23,5 @@ module "sandbox" {
     group = "non-prod"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "cpt"
 }
