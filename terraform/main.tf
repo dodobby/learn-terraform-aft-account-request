@@ -1,12 +1,12 @@
-module "hjdo-aft" {
+module "cpt-aft" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
     AccountEmail              = "alchdliodd.newaft@gmail.com"
-    AccountName               = "hjdo-aft"
+    AccountName               = "cpt-aft"
     ManagedOrganizationalUnit = "AFT"
     SSOUserEmail              = "alchdliodd.newaft@gmail.com"
-    SSOUserFirstName          = "hjdo-aft"
+    SSOUserFirstName          = "cpt-aft"
     SSOUserLastName           = "AFT"
   }
 
@@ -23,5 +23,5 @@ module "hjdo-aft" {
     group = "non-prod"
   }
 
-  account_customizations_name = "hjdo-aft"
+  account_customizations_name = "cpt-aft"
 }
