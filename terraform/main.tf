@@ -1,4 +1,4 @@
-module "sandbox" {
+module "cpt-aft" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
@@ -6,7 +6,7 @@ module "sandbox" {
     AccountName               = "cpt-aft"
     ManagedOrganizationalUnit = "AFT"
     SSOUserEmail              = "alchdliodd.newaft@gmail.com"
-    SSOUserFirstName          = "cpt"
+    SSOUserFirstName          = "cpt-aft"
     SSOUserLastName           = "AFT"
   }
 
@@ -23,5 +23,5 @@ module "sandbox" {
     group = "non-prod"
   }
 
-  account_customizations_name = "cpt"
+  account_customizations_name = "cpt-aft"
 }
