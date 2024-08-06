@@ -1,14 +1,14 @@
-# ACCOUNT REQUEST FOR cn-account6
+# ACCOUNT REQUEST FOR cn-account7
 
-module "cn-account6" {
+module "cn-account7" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "alchdli.odd+cnaccount6@gmail.com"
-    AccountName               = "cn-account6"
+    AccountEmail              = "alchdli.odd+cnaccount7@gmail.com"
+    AccountName               = "cn-account7"
     ManagedOrganizationalUnit = "AFT"
-    SSOUserEmail              = "alchdli.odd+cnaccount6@gmail.com"
-    SSOUserFirstName          = "cn-account6"
+    SSOUserEmail              = "alchdli.odd+cnaccount7@gmail.com"
+    SSOUserFirstName          = "cn-account7"
     SSOUserLastName           = "AFT"
   }
 
@@ -25,6 +25,6 @@ module "cn-account6" {
     group = "non-prod"
   }
 
-  account_customizations_name = "cn-account6"
+  account_customizations_name = "cn-account7"
 }
 
