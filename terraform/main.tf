@@ -31,7 +31,7 @@ locals {
 }
 
 module "sandbox" {
-  for_each = { for account in local.config.accounts : account.AccountName => account }
+  for_each = { for account in local.config.accounts : account.control_tower_parameters.AccountName => account }
   source   = "./modules/aft-account-request"
 
   control_tower_parameters = {
