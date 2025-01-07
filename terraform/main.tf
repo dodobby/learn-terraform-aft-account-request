@@ -27,7 +27,7 @@
 # }
 
 locals {
-  config = yamldecode(file("./sandbox_config.yaml"))
+  config = yamldecode(file("./vars.yaml"))
 }
 
 module "sandbox" {
